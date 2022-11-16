@@ -1,0 +1,55 @@
+.container { width: 1050px; margin: 0 auto; }
+
+.menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.menu .switch { position: relative; width: 60px; height: 35px; }
+
+.menu .switch input[type="checkbox"] { display: none; }
+
+.menu .switch .slider { position: relative; width: 70px; height: 35px; background-color: #673ab7; display: inline-block; border-radius: 35px; }
+
+.menu .switch .slider:before { position: absolute; content: ""; height: 26px; width: 26px; left: 4px; bottom: 4px; background-color: white; -webkit-transition: 0.5s; transition: 0.5s; border-radius: 50%; }
+
+.menu .select-box { margin-left: 50px; }
+
+.menu .select-box select { font-size: 0.9rem; padding: 2px 5px; height: 34px; width: 200px; border-color: #673ab7; border-radius: 10px; background-color: #ddc9ff; color: #673ab7; }
+
+.input-group { margin: 100px 0; }
+
+.input-group .input { border: none; border-bottom: 2px solid #ddc9ff; width: 100%; height: 50px; font-size: 30px; text-align: center; display: block; }
+
+.input-group .input::-webkit-input-placeholder { color: #ddc9ff; }
+
+.input-group .input:-ms-input-placeholder { color: #ddc9ff; }
+
+.input-group .input::-ms-input-placeholder { color: #ddc9ff; }
+
+.input-group .input::placeholder { color: #ddc9ff; }
+
+.input-group .error-message { color: #e91e63; font-weight: 500; text-align: center; }
+
+.keyboard { background-color: #673ab7; color: #9e82d1; width: 1050px; border-radius: 5px; }
+
+.keyboard .row { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.keyboard .row .key { width: 60px; height: 60px; margin: 5px; border-radius: 5px; background-color: white; cursor: pointer; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-transition: 0.2s; transition: 0.2s; }
+
+.keyboard .row .key.back-space-key { width: 130px; }
+
+.keyboard .row .key.tab-key { width: 95px; }
+
+.keyboard .row .key.back-slash-key { width: 95px; }
+
+.keyboard .row .key.caps-lock-key { width: 110px; }
+
+.keyboard .row .key.enter-key { width: 150px; }
+
+.keyboard .row .key.left-shift-key { width: 145px; }
+
+.keyboard .row .key.right-shift-key { width: 185px; }
+
+.keyboard .row .key.fn-key { width: 80px; }
+
+.keyboard .row .key.space-key { width: 420px; }
+
+.keyboard .row .key:hover { background-color: lightgray; }
