@@ -44,7 +44,7 @@ body { background-color: white; }
 
 .keyboard .row .key .two-value { width: 100%; text-align: center; }
 
-.keyboard .row .key.active { background-color: #333; color: #fff; }
+.keyboard .row .key.active { background-color: #333 !important; color: #fff; }
 
 .keyboard .row .key.back-space-key { width: 130px; }
 
