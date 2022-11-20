@@ -21,6 +21,7 @@ class keyboard {
 		this.#swichEl.addEventListener("change", this.#onChangeTheme);
 		this.#fontSelectEl.addEventListener("change", this.#onChangeFont);
 		document.addEventListener("keydown", this.#onKeyDown);
+		document.addEventListener("keyup", this.#onKeyUp);
 		this.#inputEl.addEventListener("input", this.#onInput);
 	}
 	#onChangeTheme(e) {
@@ -43,6 +44,9 @@ class keyboard {
 		if (e.isComposing || e.keyCode === 229 || /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/.test(e.key)) {
 			e.target.value = e.target.value.replace(/[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/, "");
 		}
+	};
+	#onKeyUp = e => {
+		this.#keyboardEl.querySelector(`[data-code=${e.code}]`)?.classList.remove("active");
 	};
 }
 
